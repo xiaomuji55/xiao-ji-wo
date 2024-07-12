@@ -2,20 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <title>小鸡窝</title>
+
+    <style>
+      .card > li {
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
+    <h1>你好 世界！</h1>
+    <p>👋👋👋👋</p>
+    <p id="info">111</p>
+    <hr />
+    <ul class="card">
+      <li>
+        <div>leangoo</div>
+        <a href="https://www.leangoo.com/kanban/ent/13456/c6484b0f3050bce24c8090c430395128#/home/list" target="_blank">新页面打开</a>
+        &nbsp;&nbsp;
+        <a href="https://www.leangoo.com/kanban/ent/13456/c6484b0f3050bce24c8090c430395128#/home/list" target="_parent">本页面打开</a>
+      </li>
+      <br>
+      <li>
+        <div>代码展示PPT-Slidev</div>
+        <a href="https://cn.sli.dev/" target="_blank">新页面打开</a>
+        &nbsp;&nbsp;
+        <a href="https://cn.sli.dev/" target="_parent">本页面打开</a>
+      </li>
+    </ul>
 
-    <!-- <iframe sandbox="" src="https://www.baidu.com/" frameborder="0"></iframe> -->
-    <a href="https://www.baidu.com" target="_self">点我跳转</a>
-    <a href="https://www.baidu.com" target="_blank">点我跳转</a>
-    <iframe src="https://www.baidu.com" frameborder="1"></iframe>
     <script src="./renderer.js"></script>
   </body>
 </html>
